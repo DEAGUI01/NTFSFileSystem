@@ -101,8 +101,19 @@ You can have up to four primary partitions on a standard DOS based system. There
 <br />
 On Windows 10, under the properties of an image file, check that the file hashes match those found on the text file that accompanies the image <br/>
 <img src="https://i.imgur.com/h8b7phc.png" height="80%" width="80%" alt="anylze files"/>
-
+<br />
+<br />
+Create New Case on Autopsy<br/>
+<img src="https://i.imgur.com/wyk69ft.png" height="80%" width="80%" alt="add image"/>
+<br />
+<br />
+Select forensic image as data source<br/>
+<img src="https://i.imgur.com/syNLO6i.png" height="80%" width="80%" alt="add image"/>
+<br />
+<br />
+Open the image. Scroll down on the files and notice the NTFS system files including the Master File Table $MFT and the $MFTMirr.
+<img src="https://i.imgur.com/nW1ppEh.png" height="80%" width="80%" alt="add image"/>
 
 <h2>Conclusion </h2>
-There are many variations of file systems that are used on operating systems. File Systems that are common to Microsoft operating systems include File Allocation Table (FAT) and New Technology File System (NTFS). Some of the features included with the NTFS file system include Alternate Data Streams (ADS) and the Encrypted File System (EFS). A hacker can also perform timestomping on an NTFS volume. A hexadecimal (hex) editor like HxD will allow you to examine the details of FAT or FAT32 Partitions and disk images. When an image is collected, the incident responder should generate a corresponding text file with the image MD5 and SHA1 hash values as well as other information such as the cyclical redundancy check (CRC value). The md5sum and sha1sum utilities can be utilized from the terminal to hash a data set to verify the integrity of the data.
+There are many variations of file systems that are used on operating systems. File Systems that are common to Microsoft operating systems include File Allocation Table (FAT) and New Technology File System (NTFS). Some of the features included with the NTFS file system include Alternate Data Streams (ADS) and the Encrypted File System (EFS). A hacker can also perform timestomping on an NTFS volume. A hexadecimal (hex) editor like HxD will allow you to examine the details of FAT or FAT32 Partitions and disk images. When an image is collected, the incident responder should generate a corresponding text file with the image MD5 and SHA1 hash values as well as other information such as the cyclical redundancy check (CRC value). The md5sum and sha1sum utilities can be utilized from the terminal to hash a data set to verify the integrity of the data. Autopsy is a forensic analysis tool that is free to use. Commercial forensic products, such as EnCase and FTK, are more widely used but are not free and require hardware dongles. All of these products allow you to parse fornesic images and examine files.
 </p>
